@@ -10,6 +10,20 @@
 		img {display: block; margin: 0 auto;}
 	        .center {text-align: center;}
 		p.ex1 {margin: 1cm 5cm 1cm 5cm;}
+		 
+		   .column {
+		  float: left;
+  		width: 33.33%;
+		  padding: 5px;
+		}
+
+		/* Clear floats after image containers */
+		.row::after {
+  		content: "";
+ 		 clear: both;
+ 		 display: table;
+		}
+		   
 	   </style>
 		 <script src="WOW-master/dist/wow.min.js"></script>
               <script> new WOW().init(); </script>
@@ -23,7 +37,7 @@
 	           		<br /> <br /> </div>
 	   
 		<div class="center wow fadeInLeft"> 
-			<h1> Liam Joseph Millett</h1>   
+			<h1> Liam Joseph Millett - columns take 2</h1>   
 		   </div>
 	   
 	  	 <div class="center wow fadeInRight"> 
